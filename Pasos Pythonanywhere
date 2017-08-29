@@ -1,0 +1,15 @@
+
+cd /djangogirls
+source miav/bin/activate
+python manage.py runserver
+
+
+//Publicar en git
+git status
+git add .
+git commit -a
+git push
+
+
+//En Pythonanywhere
+git pull
