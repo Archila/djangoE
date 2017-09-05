@@ -1,4 +1,14 @@
-<html>
+{% extends 'blog/base.html' %}
+      {% block content %}
+        {% for p in pub %}
+        <div class="post">
+          <p>Publicacion: {{p.published_date}}</p>
+           <h1><a href="{%url 'postea' pk=p.pk %}">{{p.title}}</a></h1>
+          <p>{{p.text|linebreaksbr}}</p>
+        </div>
+        {% endfor %}
+      {% endblock content %}
+<!--<html>
   <head>
     <title> Hola mundo </title>
   </head>
@@ -15,3 +25,4 @@
     {% endfor %}
   </body>
 </html>
+-->
