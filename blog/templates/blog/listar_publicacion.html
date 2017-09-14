@@ -3,8 +3,7 @@
         {% for p in pub %}
         <div class="post">
           <p>Publicacion: {{p.published_date}}</p>
-           <h1><a href="{%url 'postea' pk=p.pk %}">{{p.title}}</a></h1>
-          <p>{{p.text|linebreaksbr}}</p>
+           <h1><a href="{%url 'postea' pk=p.pk %}">{{p.title}}</a></h1>        
         </div>
         {% endfor %}
       {% endblock content %}
