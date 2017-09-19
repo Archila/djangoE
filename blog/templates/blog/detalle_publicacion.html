@@ -9,6 +9,7 @@
                <h1><a href="">{{ p.title }}</a></h1>
                <p>{{ p.title|linebreaksbr }}</p>
                <p>{{ p.text }}</p>
+               <a href="{% url 'post_edit' pk=p.pk %}" class="top-menu" style="color:black;">Editar</a>
            </div>
        {% endif %}
    {% endblock content %}

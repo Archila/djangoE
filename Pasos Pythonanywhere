@@ -16,3 +16,11 @@ cd djangoE
 git pull
 
 python manage.py migrate
+
+
+//Pasos para el detalle publicación
+
+1. HTML - crear el HIpervinculo (URL)
+2. url.py - crear la URL y decirle que vista ejecutar
+3. Vista
+4. Mostrar HTL del detalle
